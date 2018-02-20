@@ -1,4 +1,5 @@
 function max(numbers) {
+<<<<<<< HEAD
     // your code here
     let i = 0;
     let compareNum = numbers[0];
@@ -8,11 +9,22 @@ function max(numbers) {
      }
     //  console.log('This is the return val ',compareNum);
       i++;
+=======
+    let i = 0;
+    let compareNum =numbers[0];
+    while(i < numbers.length){
+        if(numbers[i] > compareNum){
+            compareNum = numbers[i];
+        }
+        // console.log("This my test",compareNum);
+    i++;
+>>>>>>> ae596d220f8e8e63208570da32706b05cf06ccc9
     }
     return compareNum;
   }
   
   function min(numbers) {
+<<<<<<< HEAD
     // your code here
     let i = 0;
     let compareMinNum = numbers[0];
@@ -23,6 +35,17 @@ function max(numbers) {
       i++
     }
     return compareMinNum;
+=======
+      let i = 0;
+      let compareNum =numbers[0];
+      while(i<numbers.length){
+          if(numbers[i] < compareNum){
+              compareNum = numbers[i]
+          }
+          i++;
+      }
+   return compareNum;
+>>>>>>> ae596d220f8e8e63208570da32706b05cf06ccc9
   }
   
   /* From here down, you are not expected to 
@@ -91,12 +114,17 @@ function max(numbers) {
   })();
 //-----------------------------------------------------------------------------------------------
 function average(numbers) {
+<<<<<<< HEAD
     // your code goes here
     let total = 0;
     numbers.forEach(function(number){
       total += number;
     })
     return total / numbers.length;
+=======
+   
+    
+>>>>>>> ae596d220f8e8e63208570da32706b05cf06ccc9
   }
   
   /* From here down, you are not expected to 
