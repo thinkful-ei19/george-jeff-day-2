@@ -42,18 +42,35 @@
 //     }
 //     return newArr;
 // }
-function hazardWarningCreator(typeOfWarning){
-    let warningCounter = 0;
-    return function(location){
-        warningCounter++;
-        console.log(`DANGER! There is a ${typeOfWarning} hazard at ${location}!`)
-        console.log(`The ${typeOfWarning} hazard alert has triggered ${warningCounter} time(s) today!`)
-    }
+// function hazardWarningCreator(typeOfWarning){
+//     let warningCounter = 0;
+//     return function(location){
+//         warningCounter++;
+//         console.log(`DANGER! There is a ${typeOfWarning} hazard at ${location}!`)
+//         console.log(`The ${typeOfWarning} hazard alert has triggered ${warningCounter} time(s) today!`)
+//     }
     
-}
-const rocksWarning = hazardWarningCreator('Rocks on the Road!')
-const hurricaneWarning = hazardWarningCreator('hurricane')
-const smurfsWarning = hazardWarningCreator('Army of Smurfs')
-rocksWarning('main st ')
-hurricaneWarning('Santa Monica Pier')
-smurfsWarning("New York City")
+// }
+// const rocksWarning = hazardWarningCreator('Rocks on the Road!')
+// const hurricaneWarning = hazardWarningCreator('hurricane')
+// const smurfsWarning = hazardWarningCreator('Army of Smurfs')
+// rocksWarning('main st ')
+// hurricaneWarning('Santa Monica Pier')
+// smurfsWarning("New York City")
+
+let turtleMoving = [[0, 0], [0, 5], [-1, -3], [-3, 1], [2, -4], [3, 2]];
+
+// turtleMoving.filter(function(move){
+//     if (move[0] >= 0 && move[1] >= 0){
+//         console.log(move);
+//     }
+// })
+
+// turtleMoving.map(function(move){
+//     console.log(move[0] + move[1]);
+// })
+
+// turtleMoving.forEach(function(move){
+//     console.log(move[0]);
+//     console.log(move[1]);
+// });
