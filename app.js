@@ -89,8 +89,7 @@ function max(numbers) {
   })();
 //-----------------------------------------------------------------------------------------------
 function average(numbers) {
-   
-    
+    // your code goes here
   }
   
   /* From here down, you are not expected to 
