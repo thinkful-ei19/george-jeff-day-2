@@ -1,9 +1,28 @@
 function max(numbers) {
     // your code here
+    let i = 0;
+    let compareNum = numbers[0];
+    while( i < numbers.length){
+     if (compareNum < numbers[i]){
+      compareNum = numbers[i];
+     }
+    //  console.log('This is the return val ',compareNum);
+      i++;
+    }
+    return compareNum;
   }
   
   function min(numbers) {
     // your code here
+    let i = 0;
+    let compareMinNum = numbers[0];
+    while(i < numbers.length){
+      if(compareMinNum > numbers[i]){
+        compareMinNum = numbers[i];
+      }
+      i++
+    }
+    return compareMinNum;
   }
   
   /* From here down, you are not expected to 
@@ -73,6 +92,11 @@ function max(numbers) {
 //-----------------------------------------------------------------------------------------------
 function average(numbers) {
     // your code goes here
+    let total = 0;
+    numbers.forEach(function(number){
+      total += number;
+    })
+    return total / numbers.length;
   }
   
   /* From here down, you are not expected to 
