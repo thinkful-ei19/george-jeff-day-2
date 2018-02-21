@@ -74,3 +74,22 @@
 //     console.log(move[0]);
 //     console.log(move[1]);
 // });
+
+let code ="noggin oreo the moon time tele steed his tent apollo her lives though shoo tofu budapest".split(' ');
+code.reduce(function(decode,word){
+//    decode = ' ';
+    if(word.length === 3 ){
+        decode = decode.concat(" ");
+    }
+    else{
+  decode = decode.concat(word[word.length-1].toUpperCase());
+        
+    }
+    console.log('here the next letter',decode)
+    return decode;
+},'')
+// code.reduce(function(decode,word){
+//     console.log(word)
+// })
+
+
